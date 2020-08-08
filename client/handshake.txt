@@ -1,2 +1,2 @@
 handshake
-cryptography is an asset
+cryptography is an asset, life is great

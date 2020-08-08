@@ -5,7 +5,7 @@ from subprocess import Popen, PIPE
 while(True):
     process = Popen(['sudo', 'python', 'Icmp-File-Transfer/icmp.py', 'recv', 'data.txt'])
     process.wait()
-    process = Popen(['python', 'hw1.py', 'substitution', 'decrypt', 'data.txt','handshake.txt'])
+    process = Popen(['python', 'substitution_encryption.py', 'decrypt', 'data.txt','handshake.txt'])
     process.wait()
     fi = open("handshake.txt", "r")
     fileContents = fi.read()
