@@ -1,6 +1,6 @@
 Encrypted ICMP Tunnel in Python:
 
-Client and server scripts to send/receive encrypted text over ICMP
+Client and server scripts to send/receive encrypted text over ICMP.
 
 References ICMP code from:
 
