@@ -1,12 +1,11 @@
 import sys
 from subprocess import Popen, PIPE
 
-process = Popen(['python', 'substitution_encryption.py', 'encrypt', 'handshake.txt','data.txt'])
+ip = sys.argv[1]
+print(ip)
+
+process = Popen(['python', '../substitution_encryption.py', 'encrypt', 'handshake.txt','data.txt'])
 process.wait()
-process = Popen(['sudo', 'python', 'Icmp-File-Transfer/icmp.py', 'send', 'data.txt', '10.0.1.151'])
-
-# process = Popen(['python', 'hw1.py', 'substitution', 'decrypt', 'data.txt','result.txt'])
-
-
+process = Popen(['sudo', 'python', 'Icmp-File-Transfer/icmp.py', 'send', 'data.txt', ip])
 
 stdout, stderr = process.communicate()
