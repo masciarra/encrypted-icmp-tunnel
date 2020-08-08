@@ -2,7 +2,6 @@ import sys
 from subprocess import Popen, PIPE
 
 ip = sys.argv[1]
-print(ip)
 
 process = Popen(['python', '../substitution_encryption.py', 'encrypt', 'handshake.txt','data.txt'])
 process.wait()
